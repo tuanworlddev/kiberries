@@ -1,0 +1,102 @@
+docker : #0 building with "desktop-linux" 
+instance using docker driver
+At line:1 char:1
++ docker build --no-cache --progress=plain . > 
+docker_build.log 2>&1
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (#0  
+   building wit...g docker driver:String) [], R  
+  emoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+
+#1 [internal] load build definition from 
+Dockerfile
+#1 transferring dockerfile: 190B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for 
+docker.io/library/node:24-alpine
+#2 DONE 0.9s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 2B done
+#3 DONE 0.0s
+
+#4 [1/6] FROM docker.io/library/node:24-alpine@sh
+a256:7fddd9ddeae8196abf4a3ef2de34e11f7b1a722119f9
+1f28ddf1e99dcafdf114
+#4 resolve docker.io/library/node:24-alpine@sha25
+6:7fddd9ddeae8196abf4a3ef2de34e11f7b1a722119f91f2
+8ddf1e99dcafdf114 0.0s done
+#4 DONE 0.0s
+
+#5 [2/6] WORKDIR /app
+#5 CACHED
+
+#6 [internal] load build context
+#6 transferring context: 1.83MB 0.9s done
+#6 DONE 0.9s
+
+#7 [3/6] RUN npm install -g @angular/cli
+#7 12.68 
+#7 12.68 added 289 packages in 12s
+#7 12.68 
+#7 12.68 67 packages are looking for funding
+#7 12.68   run `npm fund` for details
+#7 12.69 npm notice
+#7 12.69 npm notice New minor version of npm 
+available! 11.9.0 -> 11.11.1
+#7 12.69 npm notice Changelog: 
+https://github.com/npm/cli/releases/tag/v11.11.1
+#7 12.69 npm notice To update run: npm install 
+-g npm@11.11.1
+#7 12.69 npm notice
+#7 DONE 12.9s
+
+#8 [4/6] COPY package*.json ./
+#8 DONE 0.2s
+
+#9 [5/6] RUN npm install
+#9 11.18 
+#9 11.18 added 493 packages, and audited 494 
+packages in 11s
+#9 11.18 
+#9 11.18 115 packages are looking for funding
+#9 11.18   run `npm fund` for details
+#9 11.18 
+#9 11.18 found 0 vulnerabilities
+#9 DONE 11.4s
+
+#10 [6/6] COPY . .
+#10 DONE 6.1s
+
+#11 exporting to image
+#11 exporting layers
+#11 exporting layers 14.0s done
+#11 exporting manifest sha256:7b6cf3a27cd51748ea4
+02816c00e6122755c779d97549b7a4f87cf7c17657909 
+0.0s done
+#11 exporting config sha256:8c30c0a68cc75c299479d
+e362adfc408619c412ec98924bc254be20696b4e97c 0.0s 
+done
+#11 exporting attestation manifest sha256:47aaf0c
+87dc921c4612589f1854971a0e9c0ab0bdc907c6d3b196fbe
+d8283df6 0.0s done
+#11 exporting manifest list sha256:7a944d661e1859
+bb6a4ac4fa8e98863db6116bbd94a5f6f0b210ced8d1b69fc
+5
+#11 exporting manifest list sha256:7a944d661e1859
+bb6a4ac4fa8e98863db6116bbd94a5f6f0b210ced8d1b69fc
+5 0.0s done
+#11 naming to moby-dangling@sha256:7a944d661e1859
+bb6a4ac4fa8e98863db6116bbd94a5f6f0b210ced8d1b69fc
+5 done
+#11 unpacking to moby-dangling@sha256:7a944d661e1
+859bb6a4ac4fa8e98863db6116bbd94a5f6f0b210ced8d1b6
+9fc5
+#11 unpacking to moby-dangling@sha256:7a944d661e1
+859bb6a4ac4fa8e98863db6116bbd94a5f6f0b210ced8d1b6
+9fc5 15.7s done
+#11 DONE 29.8s

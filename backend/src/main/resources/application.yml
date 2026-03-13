@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: kiberries-backend
+  profiles:
+    active: ${SPRING_PROFILES_ACTIVE:local}
+
+server:
+  port: 8080
+  error:
+    include-message: always
+
+springdoc:
+  api-docs:
+    path: /v3/api-docs
+  swagger-ui:
+    path: /swagger-ui.html
